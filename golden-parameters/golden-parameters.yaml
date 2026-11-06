@@ -1,0 +1,17 @@
+apiVersion: porch.kpt.dev/v1alpha2
+kind: PackageRevision
+metadata: # kpt-merge: default/golden-parameters
+  name: golden-parameters
+  namespace: default
+  annotations:
+    internal.kpt.dev/upstream-identifier: 'porch.kpt.dev|PackageRevision|default|golden-parameters'
+spec:
+  repository: golden-parameters
+  packageName: golden-parameters
+  workspaceName: v1
+  lifecycle: Draft
+  source:
+    init:
+      description: "Golden Parameters for Day1 configuration"
+      keywords:
+      - Golden
