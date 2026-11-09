@@ -1,0 +1,24 @@
+# PCG Golden Parameters for License Server
+apiVersion: yang.config.ericsson.com/v1alpha1
+kind: Config
+metadata: # kpt-merge: eric-pcg-01/pny9-pcg-dmc-1111
+  name: pny9-pcg-dmc-1111 # kpt-set: ${node_name}
+  namespace: eric-pcg-01 # kpt-set: ${node_namespace}
+  annotations:
+    internal.kpt.dev/upstream-identifier: 'yang.config.ericsson.com|Config|eric-pcg-01|pny9-pcg-dmc-1111'
+spec:
+  config:
+  - path: /nlm
+    value:
+      site:
+        '0':
+          fqdn: preprod-vnels-5gdmc-vip.devopnet.in.telstra.com.au
+          priority: 100
+          service:
+            license:
+              port: 9999
+      license-domain:
+        '0':
+          customer-id: 940821
+          swlt-id: PREPROD-NEO-5GC-PCG
+          product-type: PACKET_CORE_GATEWAY
