@@ -11,7 +11,7 @@ spec:
       site:
         '0':
           fqdn: preprod-vnels-5gdmc-vip.devopnet.in.telstra.com.au
-          priority: 50 #changed this to 50 for test purposes
+          priority: 20 # changed to 20 by another user 
           service:
             license:
               port: 9999
@@ -20,4 +20,4 @@ spec:
           customer-id: 940821
           swlt-id: PREPROD-NEO-5GC-PCG
           product-type: PACKET_CORE_GATEWAY
-# added some text for test purposes
+# add new text for a another user
